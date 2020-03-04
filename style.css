@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto';
+	background-image: url(images/patt.png);
+	/*background-repeat: no-repeat;*/
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
