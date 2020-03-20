@@ -10,5 +10,100 @@ body {
 
 .container {
 	width: 1170px;
-	margin: 0 auto;
+	margin: 0 auto; /* 0 - верх, низ; auto - лівий, правий; горизонтальне центрування блочного елементу з заданою шириною*/
+}
+
+.col-md-3 {
+	width: 25%;
+}
+
+.col-md-6 {
+	width: 50%;
+}
+
+[class*="col-"] {
+	float: left;
+}
+
+.row:after, .menu:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header {
+	background-color: rgba(255,255,255,0.75);
+	padding: 25px 0;
+}
+
+.menu>li {
+	width: 25%;
+	float: left;
+	border-left: 1px solid #2c71b8;
+}
+
+.menu>li:last-child {
+	border-right: 1px solid #2c71b8;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	color:#2c71b8;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.menu a:hover {
+	background: #2c71b8;
+	color:white;
+} 
+
+.logo {
+	margin-top: 7px;
+}
+
+/*---------------------------------------------------------*/
+
+.search{
+    /*height:36px;
+    width: 198px;*/
+    border: 1px solid black;
+    /*margin: 30px;*/
+    font-size: 21px;
+    /*padding-left: 20px;
+    padding-right: 20px;
+	font-display: 'Myriad Pro';*/
+}
+
+.basket{
+    height:40px;
+    width: 40px;   
+}
+
+.submenu{
+	list-style: none;
+	position: absolute;
+	display:none;
+}
+
+.submenu a{
+	background: #2c71b8;
+	color:white;
+}
+
+.submenu a:hover{
+	background: white;;
+	color:#2c71b8;
+}
+
+.products{
+	position: relative;
+}
+
+.products:hover .submenu{
+	display:block;
 }
