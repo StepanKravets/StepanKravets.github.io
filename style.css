@@ -13,6 +13,12 @@ body {
 	margin: 0 auto; /* 0 - верх, низ; auto - лівий, правий; горизонтальне центрування блочного елементу з заданою шириною*/
 }
 
+/*.container:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+} */
+
 .col-md-3 {
 	width: 25%;
 }
@@ -68,20 +74,53 @@ body {
 
 /*---------------------------------------------------------*/
 
+
 .search{
-    /*height:36px;
-    width: 198px;*/
-    border: 1px solid black;
-    /*margin: 30px;*/
-    font-size: 21px;
-    /*padding-left: 20px;
-    padding-right: 20px;
-	font-display: 'Myriad Pro';*/
+    height:40px;
+    width: 200px;
+    border: 1px solid #2c71b8;
+	margin: 5px;
+	margin-left:23px;
+	margin-right:0;	
+	position: relative;
+	/*background-color: rgba(255,255,255,1);*/
 }
+
+input[type="search"] {
+	border: none;/*  Убираем рамку */
+	font-size: 21px;
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+	width: 165px; 
+	height: 38px;
+	color: #2c71b8;
+	padding: 5px;
+	padding-left: 15px; 
+	vertical-align: middle; /* Выравнивание по середине */
+	background-color: transparent;
+
+}
+.pusk {
+    width: 30px; /* Ширина кнопки */
+    height: 30px; /* Высота кнопки */
+	border: none; /* Убираем рамку */
+	position: absolute;
+	background-color:#2c71b8;
+	/*background-color: transparent;*/
+	margin:4px 2px;
+	background-blend-mode: multiply;
+	background-position: top;
+	background: url(images/icon_4.png) no-repeat 50% 50%; /* Параметры фона */
+	/*background-size: cover;*/
+	/*background-color: rgba(255, 0, 0, 0.5);*/
+   }
 
 .basket{
     height:40px;
-    width: 40px;   
+	width: 40px;
+	margin: 5px;
+	margin-left: 22px;
+	margin-right:0;
 }
 
 .submenu{
@@ -93,10 +132,11 @@ body {
 .submenu a{
 	background: #2c71b8;
 	color:white;
+	width:290.5px;
 }
 
 .submenu a:hover{
-	background: white;;
+	background: white;
 	color:#2c71b8;
 }
 
@@ -106,4 +146,26 @@ body {
 
 .products:hover .submenu{
 	display:block;
+}
+
+.slider{
+	height: 400px;	
+	border: 1px solid black;
+	line-height: 400px;
+}
+
+.filter{
+	height: 845px;
+	width:25%;
+	border: 1px solid black;
+}
+
+.laptops{
+	height:2335px;
+	width:75%;
+	border: 1px solid black;
+}
+
+.information{
+	background-color: rgba(255,255,255,0.1);	
 }
