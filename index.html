@@ -44,7 +44,8 @@
                         </div>
                     </div>
                     <div class="col-md-1">
-                        <button class='basket'><img src='images/icon (1).png'></button>
+                        <div class='basket'></div>
+                        <div class="basketAmount"> 4 </div>
                     </div>
 				</div>
             </div>
@@ -56,14 +57,56 @@
                 <div class="slider"> Slider</div>
             </div>
             <div class="row information">              
-                <div class="col-md-3 filter">filter</div>
+                <div class="col-md-3 filter">
+                    <form action="">
+                            <legend> DEVICE TYPE </legend> <br>
+                            <div>
+                                <input type="checkbox" name="deviceType" value="Laptop" checked> Laptop <br>
+                                <input type="checkbox" name="deviceType" value="Tablet"> Tablet <br>
+                            </div>
+                            <legend class="choiseOption"> COLOR </legend><br>
+                            <div>
+                                <input type="checkbox" name="color" value="Black"> Black <br>
+                                <input type="checkbox" name="color" value="Red"> Red <br>
+                                <input type="checkbox" name="color" value="Green" checked> Green <br>
+                                <input type="checkbox" name="color" value="Blue"> Blue <br>
+                                <input type="checkbox" name="color" value="Orange"> Orange <br>
+                            </div>
+                            <legend class="choiseOption"> RAM </legend><br>
+                            <div>
+                                <input type="checkbox" name="ram" value="GB_1"> 1GB <br>
+                                <input type="checkbox" name="ram" value="GB_2"> 2GB <br>
+                                <input type="checkbox" name="ram" value="GB_4" checked> 4GB <br>
+                                <input type="checkbox" name="ram" value="GB_6"> 6GB <br>
+                                <input type="checkbox" name="ram" value="GB_8"> 8GB <br> 
+                            </div>
+                        <div class="showMoreFilter"> <a href=""> Show more options...</a></div> <br>
+                        <button class="submitOption" type="submit"> SUBMIT </button>
+                        
+                    </form>
+                    
+                </div>
                 <div class="col-md-9 laptops">
                     <div class="row">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="">Home Products</a></li>
+                                <li><a href="">Home page</a></li>
                                 <li><a href="">Products</a></li>
-                                <li><span>Laptop</span></li>
+                                <li><span>Laptops and Tables</span></li>
+                                <br><div> 
+                                    <span class="titleGoods"> Laptops and Tables </span>
+                                    <select class="sortOption">
+                                        <option value="sort by price"> sort by price </option> 
+                                        <option value="sort by name"> sort by name </option>
+                                        <option value="sort by date"> sort by date </option>       
+                                        <option value="sort by popularity"> sort by popularity </option>  
+                                    </select>
+                                </div>
+                                <div class="deviceN1">
+                                    
+                                </div>
+
+
                             </ul>
                         </div>
                     </div>
