@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <title>Shop</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
                     <nav>
                         <ul class="menu">
                             <li><a href="">Home</a></li>
-                            <li class="products"><a href="">Products</a>
+                            <li class="products"><a href="">Products </a>
 								<ul class="submenu">
 									<li><a href=""> Lorem ipsum dolor</a></li>
 									<li><a href=""> Sit amet</a></li>
@@ -29,7 +30,7 @@
 									<li><a href=""> Dolore magna aliqua</a></li>
 									<li><a href=""> Ut enim ad minim veniam</a></li>
 									<li><a href=""> Quis nostrud</a></li>
-								</ul>
+                                </ul>
 							</li>
                             <li><a href="">Payment</a></li>
                             <li><a href="">Shipping</a></li>
@@ -44,8 +45,7 @@
                         </div>
                     </div>
                     <div class="col-md-1">
-                        <div class='basket'></div>
-                        <div class="basketAmount"> 4 </div>
+                        <div class='basket'><div class="basketAmount"> 4 </div></div>
                     </div>
 				</div>
             </div>
@@ -61,24 +61,36 @@
                     <form action="">
                             <legend> DEVICE TYPE </legend> <br>
                             <div>
-                                <input type="checkbox" name="deviceType" value="Laptop" checked> Laptop <br>
-                                <input type="checkbox" name="deviceType" value="Tablet"> Tablet <br>
+                                <input type="checkbox" name="deviceType" id="textLaptop" checked> 
+                                    <label for="textLaptop">Laptop </label> <br><br>
+                                <input type="checkbox" name="deviceType" id="textTablet"> 
+                                    <label for="textTablet">Tablet</label>
                             </div>
                             <legend class="choiseOption"> COLOR </legend><br>
                             <div>
-                                <input type="checkbox" name="color" value="Black"> Black <br>
-                                <input type="checkbox" name="color" value="Red"> Red <br>
-                                <input type="checkbox" name="color" value="Green" checked> Green <br>
-                                <input type="checkbox" name="color" value="Blue"> Blue <br>
-                                <input type="checkbox" name="color" value="Orange"> Orange <br>
+                                <input type="checkbox" name="color" id="textColorBlack">
+                                    <label for="textColorBlack"> Black </label> <br>
+                                <input type="checkbox" name="color" id="textColorRed">
+                                    <label for="textColorRed"> Red </label> <br>
+                                <input type="checkbox" name="color" id="textColorGreen" checked> 
+                                    <label for="textColorGreen"> Green </label> <br>
+                                <input type="checkbox" name="color" id="textColorBlue">
+                                    <label for="textColorBlue"> Blue </label> <br>
+                                <input type="checkbox" name="color" id="textColorOrange"> 
+                                    <label for="textColorOrange"> Orange </label> <br>
                             </div>
                             <legend class="choiseOption"> RAM </legend><br>
                             <div>
-                                <input type="checkbox" name="ram" value="GB_1"> 1GB <br>
-                                <input type="checkbox" name="ram" value="GB_2"> 2GB <br>
-                                <input type="checkbox" name="ram" value="GB_4" checked> 4GB <br>
-                                <input type="checkbox" name="ram" value="GB_6"> 6GB <br>
-                                <input type="checkbox" name="ram" value="GB_8"> 8GB <br> 
+                                <input type="checkbox" name="ram" id="GB_1"> 
+                                    <label for="GB_1"> 1GB </label> <br>
+                                <input type="checkbox" name="ram" id="GB_2"> 
+                                    <label for="GB_2"> 2GB </label> <br>
+                                <input type="checkbox" name="ram" id="GB_4" checked>
+                                    <label for="GB_4"> 4GB </label> <br>
+                                <input type="checkbox" name="ram" id="GB_6"> 
+                                    <label for="GB_6"> 6GB </label> <br>
+                                <input type="checkbox" name="ram" id="GB_8"> 
+                                    <label for="GB_8"> 8GB </label> <br>
                             </div>
                         <div class="showMoreFilter"> <a href=""> Show more options...</a></div> <br>
                         <button class="submitOption" type="submit"> SUBMIT </button>
@@ -90,10 +102,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="">Home page</a></li>
-                                <li><a href="">Products</a></li>
-                                <li><span>Laptops and Tables</span></li>
-                                <br><div> 
+                                <ul class="breadCrumbs">
+                                    <li class="breadCrumbsGoods"><a href="">Home page</a> 
+                                        <span class="breadCrumbsZnak"> > </span> </li>
+                                    <li class="breadCrumbsGoods"><a href="">Products</a>
+                                        <span class="breadCrumbsZnak"> > </span> </li> 
+                                    <li class="breadCrumbsGoods"><span>Laptops and Tables</span></li>
+                                </ul>
+                                <div class="headerGoods">
                                     <span class="titleGoods"> Laptops and Tables </span>
                                     <select class="sortOption">
                                         <option value="sort by price"> sort by price </option> 
@@ -102,10 +118,77 @@
                                         <option value="sort by popularity"> sort by popularity </option>  
                                     </select>
                                 </div>
-                                <div class="deviceN1">
-                                    
-                                </div>
-
+                                <ul class="listDevices">
+                                        <li class="listDevicesN1">
+                                            <div class="deviceN1">
+                                                <div class="deviceN1Pic">
+                                                    <button class="deviceN1Mark"> </button>
+                                                    <button class="deviceN1Like"> </button>
+                                                </div>
+                                                <div class="deviceN1HeaderText">
+                                                    #1 Device Name
+                                                </div>
+                                                <div class="deviceN1Text">
+                                                    <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                    <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                    <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                    <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                </div>
+                                                <div class="deviceN1Sum"> $599 <sub>25</sub></div>
+                                                <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                <button class="deviceN1AddToCart"> 
+                                                    <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <img src="images/icon_2.png">
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                            <div class="deviceN1">
+                                                <div class="deviceN2Pic">
+                                                    <button class="deviceN1Mark"> </button>
+                                                    <button class="deviceN1Like"> </button>
+                                                </div>
+                                                <div class="deviceN1HeaderText">
+                                                    #2 Device Name
+                                                </div>
+                                                <div class="deviceN1Text">
+                                                    <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                    <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                    <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                    <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                </div>
+                                                <div class="deviceN1Sum"> $1250 <sub>99</sub></div>
+                                                <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                <button class="deviceN1AddToCart"> 
+                                                    <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <img src="images/icon_2.png">
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN3">
+                                                    <div class="deviceN3Pic">
+                                                        <button class="deviceN1Mark"> </button>
+                                                        <button class="deviceN1Like"> </button>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #3 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $399 <sub>50</sub></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                </ul>
 
                             </ul>
                         </div>
