@@ -21,7 +21,7 @@
                     <nav>
                         <ul class="menu">
                             <li><a href="">Home</a></li>
-                            <li class="products"><a href="">Products </a>
+                            <li class="products"><a href="">Products <div class="singProd"></div></a>
 								<ul class="submenu">
 									<li><a href=""> Lorem ipsum dolor</a></li>
 									<li><a href=""> Sit amet</a></li>
@@ -59,42 +59,65 @@
             <div class="row information">              
                 <div class="col-md-3 filter">
                     <form action="">
-                            <legend> DEVICE TYPE </legend> <br>
+                            <legend> DEVICE TYPE </legend>
                             <div>
-                                <input type="checkbox" name="deviceType" id="textLaptop" checked> 
-                                    <label for="textLaptop">Laptop </label> <br><br>
-                                <input type="checkbox" name="deviceType" id="textTablet"> 
-                                    <label for="textTablet">Tablet</label>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="deviceType" id="textLaptop" checked> 
+                                        <label for="textLaptop">Laptop </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="deviceType" id="textTablet"> 
+                                        <label for="textTablet">Tablet</label>
+                                </div>
                             </div>
-                            <legend class="choiseOption"> COLOR </legend><br>
+                            <legend class="choiseOption"> COLOR </legend>
                             <div>
-                                <input type="checkbox" name="color" id="textColorBlack">
-                                    <label for="textColorBlack"> Black </label> <br>
-                                <input type="checkbox" name="color" id="textColorRed">
-                                    <label for="textColorRed"> Red </label> <br>
-                                <input type="checkbox" name="color" id="textColorGreen" checked> 
-                                    <label for="textColorGreen"> Green </label> <br>
-                                <input type="checkbox" name="color" id="textColorBlue">
-                                    <label for="textColorBlue"> Blue </label> <br>
-                                <input type="checkbox" name="color" id="textColorOrange"> 
-                                    <label for="textColorOrange"> Orange </label> <br>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="color" id="textColorBlack">
+                                        <label for="textColorBlack"> Black </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="color" id="textColorRed">
+                                        <label for="textColorRed"> Red </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="color" id="textColorGreen" checked> 
+                                        <label for="textColorGreen"> Green </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="color" id="textColorBlue">
+                                        <label for="textColorBlue"> Blue </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="color" id="textColorOrange"> 
+                                        <label for="textColorOrange"> Orange </label>
+                                </div>  
                             </div>
-                            <legend class="choiseOption"> RAM </legend><br>
+                            <legend class="choiseOption"> RAM </legend>
                             <div>
-                                <input type="checkbox" name="ram" id="GB_1"> 
-                                    <label for="GB_1"> 1GB </label> <br>
-                                <input type="checkbox" name="ram" id="GB_2"> 
-                                    <label for="GB_2"> 2GB </label> <br>
-                                <input type="checkbox" name="ram" id="GB_4" checked>
-                                    <label for="GB_4"> 4GB </label> <br>
-                                <input type="checkbox" name="ram" id="GB_6"> 
-                                    <label for="GB_6"> 6GB </label> <br>
-                                <input type="checkbox" name="ram" id="GB_8"> 
-                                    <label for="GB_8"> 8GB </label> <br>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="ram" id="GB_1"> 
+                                        <label for="GB_1"> 1GB </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="ram" id="GB_2"> 
+                                        <label for="GB_2"> 2GB </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="ram" id="GB_4" checked>
+                                        <label for="GB_4"> 4GB </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="ram" id="GB_6"> 
+                                        <label for="GB_6"> 6GB </label>
+                                </div>
+                                <div class="labelOption">
+                                    <input type="checkbox" name="ram" id="GB_8"> 
+                                        <label for="GB_8"> 8GB </label>
+                                </div>
                             </div>
-                        <div class="showMoreFilter"> <a href=""> Show more options...</a></div> <br>
+                        <div class="showMoreFilter"> <a href=""> Show more options...</a></div>
                         <button class="submitOption" type="submit"> SUBMIT </button>
-                        
                     </form>
                     
                 </div>
@@ -107,23 +130,29 @@
                                         <span class="breadCrumbsZnak"> > </span> </li>
                                     <li class="breadCrumbsGoods"><a href="">Products</a>
                                         <span class="breadCrumbsZnak"> > </span> </li> 
-                                    <li class="breadCrumbsGoods"><span>Laptops and Tables</span></li>
+                                    <li class="breadCrumbsGoods"><span class="breadCrumbsLast">Laptops and Tablets</span></li>
                                 </ul>
                                 <div class="headerGoods">
                                     <span class="titleGoods"> Laptops and Tables </span>
                                     <select class="sortOption">
-                                        <option value="sort by price"> sort by price </option> 
-                                        <option value="sort by name"> sort by name </option>
-                                        <option value="sort by date"> sort by date </option>       
-                                        <option value="sort by popularity"> sort by popularity </option>  
+                                        <option class="sortOptionPunkt" value="sort by price"> sort by price </option> 
+                                        <option class="sortOptionPunkt" value="sort by name"> sort by name </option>
+                                        <option class="sortOptionPunkt" value="sort by date"> sort by date </option>       
+                                        <option class="sortOptionPunkt" value="sort by popularity"> sort by popularity </option>  
                                     </select>
                                 </div>
                                 <ul class="listDevices">
                                         <li class="listDevicesN1">
                                             <div class="deviceN1">
                                                 <div class="deviceN1Pic">
-                                                    <button class="deviceN1Mark"> </button>
-                                                    <button class="deviceN1Like"> </button>
+                                                    <div class="deviceN1Mark"> 
+                                                        <input type="checkbox" id="toggleMark1">
+                                                        <label for="toggleMark1"></label>        
+                                                    </div>
+                                                    <div class="deviceN1Like">
+                                                        <input type="checkbox" id="toggleLike1">
+                                                        <label for="toggleLike1"></label>
+                                                    </div>
                                                 </div>
                                                 <div class="deviceN1HeaderText">
                                                     #1 Device Name
@@ -134,7 +163,7 @@
                                                     <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
                                                     <div class="deviceN1TextPar">RAM: 1GB</div>
                                                 </div>
-                                                <div class="deviceN1Sum"> $599 <sub>25</sub></div>
+                                                <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
                                                 <button class="deviceN1Details"> MORE DETAILS </button> <br>
                                                 <button class="deviceN1AddToCart"> 
                                                     <span class="deviceN1AddToCartText"> ADD TO CART</span>
@@ -143,33 +172,45 @@
                                             </div>
                                         </li>
                                         <li class="listDevicesN1">
-                                            <div class="deviceN1">
-                                                <div class="deviceN2Pic">
-                                                    <button class="deviceN1Mark"> </button>
-                                                    <button class="deviceN1Like"> </button>
+                                                <div class="deviceN1">
+                                                    <div class="deviceN2Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark2">
+                                                            <label for="toggleMark2"></label>        
+                                                        </div>
+                                                        <div class="deviceN1Like">
+                                                            <input type="checkbox" id="toggleLike2">
+                                                            <label for="toggleLike2"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #2 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
                                                 </div>
-                                                <div class="deviceN1HeaderText">
-                                                    #2 Device Name
-                                                </div>
-                                                <div class="deviceN1Text">
-                                                    <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
-                                                    <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
-                                                    <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
-                                                    <div class="deviceN1TextPar">RAM: 1GB</div>
-                                                </div>
-                                                <div class="deviceN1Sum"> $1250 <sub>99</sub></div>
-                                                <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                <button class="deviceN1AddToCart"> 
-                                                    <span class="deviceN1AddToCartText"> ADD TO CART</span>
-                                                    <img src="images/icon_2.png">
-                                                </button>
-                                            </div>
                                         </li>
                                         <li class="listDevicesN1">
                                                 <div class="deviceN3">
                                                     <div class="deviceN3Pic">
-                                                        <button class="deviceN1Mark"> </button>
-                                                        <button class="deviceN1Like"> </button>
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark3">
+                                                            <label for="toggleMark3"></label>  
+                                                        </div>
+                                                        <div class="deviceN1Like"> 
+                                                            <input type="checkbox" id="toggleLike3">
+                                                            <label for="toggleLike3"></label>    
+                                                        </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
                                                         #3 Device Name
@@ -180,7 +221,181 @@
                                                         <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
                                                         <div class="deviceN1TextPar">RAM: 1GB</div>
                                                     </div>
-                                                    <div class="deviceN1Sum"> $399 <sub>50</sub></div>
+                                                    <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN1">
+                                                    <div class="deviceN4Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark4">
+                                                            <label for="toggleMark4"></label>        
+                                                        </div>
+                                                        <div class="deviceN1Like">
+                                                            <input type="checkbox" id="toggleLike4">
+                                                            <label for="toggleLike4"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #1 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN1">
+                                                    <div class="deviceN5Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark5">
+                                                            <label for="toggleMark5"></label>        
+                                                        </div>
+                                                        <div class="deviceN1Like">
+                                                            <input type="checkbox" id="toggleLike5">
+                                                            <label for="toggleLike5"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #2 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN3">
+                                                    <div class="deviceN6Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark6">
+                                                            <label for="toggleMark6"></label>  
+                                                        </div>
+                                                        <div class="deviceN1Like"> 
+                                                            <input type="checkbox" id="toggleLike6">
+                                                            <label for="toggleLike6"></label>    
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #3 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN1">
+                                                    <div class="deviceN7Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark7">
+                                                            <label for="toggleMark7"></label>        
+                                                        </div>
+                                                        <div class="deviceN1Like">
+                                                            <input type="checkbox" id="toggleLike7">
+                                                            <label for="toggleLike7"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #1 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN1">
+                                                    <div class="deviceN8Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark8">
+                                                            <label for="toggleMark8"></label>        
+                                                        </div>
+                                                        <div class="deviceN1Like">
+                                                            <input type="checkbox" id="toggleLike8">
+                                                            <label for="toggleLike8"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #2 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
+                                                    <button class="deviceN1Details"> MORE DETAILS </button> <br>
+                                                    <button class="deviceN1AddToCart"> 
+                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                        <img src="images/icon_2.png">
+                                                    </button>
+                                                </div>
+                                        </li>
+                                        <li class="listDevicesN1">
+                                                <div class="deviceN3">
+                                                    <div class="deviceN9Pic">
+                                                        <div class="deviceN1Mark"> 
+                                                            <input type="checkbox" id="toggleMark9">
+                                                            <label for="toggleMark9"></label>  
+                                                        </div>
+                                                        <div class="deviceN1Like"> 
+                                                            <input type="checkbox" id="toggleLike9">
+                                                            <label for="toggleLike9"></label>    
+                                                        </div>
+                                                    </div>
+                                                    <div class="deviceN1HeaderText">
+                                                        #3 Device Name
+                                                    </div>
+                                                    <div class="deviceN1Text">
+                                                        <div class="deviceN1TextPar"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div> <br>
+                                                        <div class="deviceN1TextPar">TYPE: Laptop</div> <br>
+                                                        <div class="deviceN1TextPar">SCREEN SIZE : 7 inches</div> <br>
+                                                        <div class="deviceN1TextPar">RAM: 1GB</div>
+                                                    </div>
+                                                    <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
                                                     <button class="deviceN1AddToCart"> 
                                                         <span class="deviceN1AddToCartText"> ADD TO CART</span>
@@ -189,15 +404,15 @@
                                                 </div>
                                         </li>
                                 </ul>
-
                             </ul>
                         </div>
                     </div>
+                    <div class="loadMoreDevices"> <a href="">Load more...</a> </div>
             </div>
-
-
         </div>
     </main>
-    <footer class="footer">Fotter</footer>
+    <footer class="footer">
+        <div class="divFooter"> © Copyright 2017</div>
+    </footer>
 </body>
 </html>
