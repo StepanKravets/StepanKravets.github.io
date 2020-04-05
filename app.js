@@ -1,38 +1,38 @@
-/* -------1-------*/
-let x=+prompt("Введіть перше число: ");
-let y=+prompt("Введіть друге число: ");
-let z=Boolean(+prompt("Введіть третій параметр (true - 1, false - 0): "));
+let productsCountEl = document.getElementById("products-count");
+//console.log(productsCountEl);
 
-console.log(" Результат: " +Comparison(x,y,z));
+let addToCartButtons = document.querySelectorAll(".add-to-cart")
+//console.log(addToCartButtons);
 
-function Comparison(x,y,z)
-{
-    if((z && (x>=y)) || (!z && (x<=y))) {
-        return x;
-    } else if ((z && (x<y)) || (!z && (x>y))){
-        return y;
+for(let i = 0; i < addToCartButtons.length; i++) {
+    addToCartButtons[i].addEventListener("click",function() {
+        let prevProductCount = +productsCountEl.textContent;
+        productsCountEl.textContent = prevProductCount + 1;
+    })
+}
+
+/*-----------------------------------*/
+
+let numbers=[23,45,65,76,234,4,56,1,3455,54,345.6,4566.3];
+
+/*-----------1-----------*/
+console.log(numbers[numbers.length-1]);
+
+/*-----------2-----------*/
+let sum=0;
+for(let i=0;i<numbers.length;i++){
+    sum=sum+numbers[i];
+}
+console.log("Сума: "+ sum);
+
+/*-----------3-----------*/
+let max=numbers[0];
+for(let i=1;i<numbers.length;i++){
+    if(numbers[i]>max){
+        max=numbers[i];
     }
 }
+console.log("Максимальне значення: "+max);
 
-/* --------2-------*/
-let sum=+prompt("Введіть суму покупок:");
-
-console.log("Сума з врахуванням знижки: "+priceWithDiscount(sum));
-
-function priceWithDiscount(sum)
-{
-    let discount;
-        if(sum<1000){
-            discount=3;
-        }
-        else if(sum>=1000 && sum<=5000){
-            discount=5;
-        }
-        else if(sum>5000){
-            discount=7;
-        }
-    return sum - sum*discount/100;
-}
-
-
+/*-------------------------------------*/
 

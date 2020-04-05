@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>Shop</title>
 </head>
 <body>
@@ -45,7 +44,7 @@
                         </div>
                     </div>
                     <div class="col-md-1">
-                        <div class='basket'><div class="basketAmount"> 4 </div></div>
+                        <div class='basket'><div id="products-count"> 0 </div></div>
                     </div>
 				</div>
             </div>
@@ -146,12 +145,14 @@
                                             <div class="deviceN1">
                                                 <div class="deviceN1Pic">
                                                     <div class="deviceN1Mark"> 
-                                                        <input type="checkbox" id="toggleMark1">
-                                                        <label for="toggleMark1"></label>        
+                                                        <!--<input type="checkbox" id="toggleMark1">
+                                                        <label for="toggleMark1"></label>-->
+                                                        <label></label>        
                                                     </div>
                                                     <div class="deviceN1Like">
-                                                        <input type="checkbox" id="toggleLike1">
-                                                        <label for="toggleLike1"></label>
+                                                        <!--<input type="checkbox" id="toggleLike1">
+                                                        <label for="toggleLike1"></label>-->
+                                                        <label></label>
                                                     </div>
                                                 </div>
                                                 <div class="deviceN1HeaderText">
@@ -165,8 +166,8 @@
                                                 </div>
                                                 <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
                                                 <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                <button class="deviceN1AddToCart"> 
-                                                    <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                <button class="add-to-cart"> 
+                                                    <span class="add-to-cart-Text"> ADD TO CART</span>
                                                     <img src="images/icon_2.png">
                                                 </button>
                                             </div>
@@ -175,12 +176,10 @@
                                                 <div class="deviceN1">
                                                     <div class="deviceN2Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark2">
-                                                            <label for="toggleMark2"></label>        
+                                                            <label></label>        
                                                         </div>
                                                         <div class="deviceN1Like">
-                                                            <input type="checkbox" id="toggleLike2">
-                                                            <label for="toggleLike2"></label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -194,8 +193,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -204,12 +203,10 @@
                                                 <div class="deviceN3">
                                                     <div class="deviceN3Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark3">
-                                                            <label for="toggleMark3"></label>  
+                                                            <label></label>  
                                                         </div>
                                                         <div class="deviceN1Like"> 
-                                                            <input type="checkbox" id="toggleLike3">
-                                                            <label for="toggleLike3"></label>    
+                                                            <label></label>    
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -223,8 +220,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -233,12 +230,10 @@
                                                 <div class="deviceN1">
                                                     <div class="deviceN4Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark4">
-                                                            <label for="toggleMark4"></label>        
+                                                            <label></label>        
                                                         </div>
                                                         <div class="deviceN1Like">
-                                                            <input type="checkbox" id="toggleLike4">
-                                                            <label for="toggleLike4"></label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -252,8 +247,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -262,12 +257,10 @@
                                                 <div class="deviceN1">
                                                     <div class="deviceN5Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark5">
-                                                            <label for="toggleMark5"></label>        
+                                                            <label></label>        
                                                         </div>
                                                         <div class="deviceN1Like">
-                                                            <input type="checkbox" id="toggleLike5">
-                                                            <label for="toggleLike5"></label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -281,8 +274,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -291,12 +284,10 @@
                                                 <div class="deviceN3">
                                                     <div class="deviceN6Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark6">
-                                                            <label for="toggleMark6"></label>  
+                                                            <label></label>  
                                                         </div>
                                                         <div class="deviceN1Like"> 
-                                                            <input type="checkbox" id="toggleLike6">
-                                                            <label for="toggleLike6"></label>    
+                                                            <label></label>    
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -310,8 +301,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -320,12 +311,10 @@
                                                 <div class="deviceN1">
                                                     <div class="deviceN7Pic">
                                                         <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark7">
-                                                            <label for="toggleMark7"></label>        
+                                                            <label></label>        
                                                         </div>
                                                         <div class="deviceN1Like">
-                                                            <input type="checkbox" id="toggleLike7">
-                                                            <label for="toggleLike7"></label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -339,8 +328,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $599 <span class="subCss">25</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -348,13 +337,11 @@
                                         <li class="listDevicesN1">
                                                 <div class="deviceN1">
                                                     <div class="deviceN8Pic">
-                                                        <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark8">
-                                                            <label for="toggleMark8"></label>        
+                                                        <div class="deviceN1Mark">
+                                                            <label></label>        
                                                         </div>
                                                         <div class="deviceN1Like">
-                                                            <input type="checkbox" id="toggleLike8">
-                                                            <label for="toggleLike8"></label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -368,8 +355,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $1250 <span class="subCss">99</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -377,13 +364,11 @@
                                         <li class="listDevicesN1">
                                                 <div class="deviceN3">
                                                     <div class="deviceN9Pic">
-                                                        <div class="deviceN1Mark"> 
-                                                            <input type="checkbox" id="toggleMark9">
-                                                            <label for="toggleMark9"></label>  
+                                                        <div class="deviceN1Mark">
+                                                            <label></label>  
                                                         </div>
                                                         <div class="deviceN1Like"> 
-                                                            <input type="checkbox" id="toggleLike9">
-                                                            <label for="toggleLike9"></label>    
+                                                            <label></label>    
                                                         </div>
                                                     </div>
                                                     <div class="deviceN1HeaderText">
@@ -397,8 +382,8 @@
                                                     </div>
                                                     <div class="deviceN1Sum"> $399 <span class="subCss">50</span></div>
                                                     <button class="deviceN1Details"> MORE DETAILS </button> <br>
-                                                    <button class="deviceN1AddToCart"> 
-                                                        <span class="deviceN1AddToCartText"> ADD TO CART</span>
+                                                    <button class="add-to-cart"> 
+                                                        <span class="add-to-cart-Text"> ADD TO CART</span>
                                                         <img src="images/icon_2.png">
                                                     </button>
                                                 </div>
@@ -414,5 +399,6 @@
     <footer class="footer">
         <div class="divFooter"> © Copyright 2017</div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
